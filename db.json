@@ -1,0 +1,155 @@
+{
+  "resources": [
+    {
+      "id": "1",
+      "title": "Angular Signals Complete Guide",
+      "description": "Comprehensive guide to understanding and using Angular Signals in modern applications",
+      "type": "document",
+      "url": "https://angular.dev/guide/signals",
+      "categoryId": "1",
+      "tags": ["angular", "signals", "tutorial", "frontend"],
+      "isFavorite": true,
+      "isArchived": false,
+      "createdAt": "2024-01-15T10:00:00Z",
+      "updatedAt": "2024-01-15T10:00:00Z",
+      "metadata": {
+        "author": "Angular Team",
+        "readTime": "15 min"
+      }
+    },
+    {
+      "id": "2",
+      "title": "NgRx Signal Store Documentation",
+      "description": "Official documentation for NgRx Signal Store - state management with signals",
+      "type": "link",
+      "url": "https://ngrx.io/guide/signals",
+      "categoryId": "1",
+      "tags": ["ngrx", "state-management", "signals"],
+      "isFavorite": true,
+      "isArchived": false,
+      "createdAt": "2024-01-16T14:30:00Z",
+      "updatedAt": "2024-01-16T14:30:00Z",
+      "metadata": {
+        "author": "NgRx Team"
+      }
+    },
+    {
+      "id": "3",
+      "title": "Tailwind CSS Tutorial",
+      "description": "Learn Tailwind CSS from scratch with practical examples",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=example",
+      "categoryId": "2",
+      "tags": ["tailwind", "css", "tutorial", "design"],
+      "isFavorite": false,
+      "isArchived": false,
+      "createdAt": "2024-01-20T09:15:00Z",
+      "updatedAt": "2024-01-20T09:15:00Z",
+      "metadata": {
+        "duration": "2h 30min",
+        "author": "CSS Mastery"
+      }
+    }
+  ],
+  "notes": [
+    {
+      "id": "1",
+      "title": "Signal Store Best Practices",
+      "content": "# Signal Store Best Practices\n\n## Key Points\n\n1. Always use `computed()` for derived state\n2. Keep stores focused on single domain\n3. Use `patchState` for updates\n4. Leverage TypeScript for type safety\n\n## Example\n\n```typescript\nexport const MyStore = signalStore(\n  withState({ items: [] }),\n  withComputed((store) => ({\n    count: computed(() => store.items().length)\n  }))\n);\n```",
+      "format": "markdown",
+      "categoryId": "1",
+      "tags": ["angular", "signals", "best-practices"],
+      "linkedResources": ["2"],
+      "isPinned": true,
+      "createdAt": "2024-01-18T11:00:00Z",
+      "updatedAt": "2024-01-18T16:45:00Z",
+      "versions": []
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Learning",
+      "description": "Educational resources and tutorials",
+      "color": "#3b82f6",
+      "icon": "book",
+      "order": 1,
+      "createdAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Design",
+      "description": "UI/UX design resources and inspiration",
+      "color": "#8b5cf6",
+      "icon": "palette",
+      "order": 2,
+      "createdAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "3",
+      "name": "Work Projects",
+      "description": "Active work projects and documentation",
+      "parentId": null,
+      "color": "#10b981",
+      "icon": "briefcase",
+      "order": 3,
+      "createdAt": "2024-01-15T10:00:00Z"
+    }
+  ],
+  "tags": [
+    {
+      "id": "1",
+      "name": "angular",
+      "color": "#dd0031",
+      "usageCount": 8,
+      "createdAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "signals",
+      "color": "#3b82f6",
+      "usageCount": 6,
+      "createdAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "3",
+      "name": "tutorial",
+      "color": "#f59e0b",
+      "usageCount": 5,
+      "createdAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "4",
+      "name": "tailwind",
+      "color": "#06b6d4",
+      "usageCount": 3,
+      "createdAt": "2024-01-20T09:00:00Z"
+    }
+  ],
+  "activities": [
+    {
+      "id": "1",
+      "type": "create",
+      "entityType": "resource",
+      "entityId": "1",
+      "entityName": "Angular Signals Complete Guide",
+      "timestamp": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "type": "create",
+      "entityType": "note",
+      "entityId": "1",
+      "entityName": "Signal Store Best Practices",
+      "timestamp": "2024-01-18T11:00:00Z"
+    },
+    {
+      "id": "3",
+      "type": "update",
+      "entityType": "resource",
+      "entityId": "1",
+      "entityName": "Angular Signals Complete Guide",
+      "timestamp": "2024-01-19T14:30:00Z"
+    }
+  ]
+}

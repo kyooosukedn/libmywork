@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "angular.ng-template",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss",
+    "pkief.material-icon-theme",
+    "nrwl.angular-console",
+    "ms-vscode.vscode-typescript-next"
+  ]
+}
