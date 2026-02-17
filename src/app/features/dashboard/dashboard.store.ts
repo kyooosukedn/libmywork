@@ -90,7 +90,7 @@ export const DashboardStore = signalStore(
       const categoriesStore = inject(CategoriesStore);
       const tagsStore = inject(TagsStore);
 
-      // Load all data for dashboard
+      // Load all data for dashboard - these execute in parallel as they are RxJS observables
       notesStore.loadNotes();
       resourcesStore.loadResources();
       categoriesStore.loadCategories();
